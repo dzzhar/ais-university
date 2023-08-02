@@ -40,13 +40,21 @@
                             <div class="col-md-12">
                                 <div class="form-group">
                                     <label for="" class="text-sm font-weight-bold">ID Jurusan</label>
-                                    <input class="form-control" type="text" name="jurusan_id" required>
+                                    <select name="jurusan_id" class="form-control">
+                                        @foreach ($idJurusan as $jurusan)
+                                            <option value="{{ $jurusan->id }}">{{ $jurusan->nama }}</option>
+                                        @endforeach
+                                    </select>
                                 </div>
                             </div>
                             <div class="col-md-12">
                                 <div class="form-group">
                                     <label for="" class="text-sm font-weight-bold">ID Kelas</label>
-                                    <input class="form-control" type="text" name="kelas_id" required>
+                                    <select name="kelas_id" class="form-control">
+                                        @foreach ($idKelas as $kelas)
+                                            <option value="{{ $kelas->id }}">{{ $kelas->kelas }}</option>
+                                        @endforeach
+                                    </select>
                                 </div>
                             </div>
                             <div>

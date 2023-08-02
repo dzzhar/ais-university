@@ -15,7 +15,7 @@
                             @csrf
                             <div class="col-md-12">
                                 <div class="form-group">
-                                    <label for="" class="text-sm font-weight-bold">Nama Jurusan</label>
+                                    <label for="nama" class="text-sm font-weight-bold">Nama Jurusan</label>
                                     <input class="form-control" type="text" name="nama" required>
                                 </div>
                             </div>

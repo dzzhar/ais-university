@@ -70,7 +70,7 @@
             <h1>AIS <span>Universitas Tadika Mesra</span></h1>
             <h2>Media Digital Layanan, Monitoring, dan Penyajian Akademik</h2>
             <div class="d-flex">
-                <a href="/register" class="btn-get-started scrollto">Register</a>
+                ` <a href="/register" class="btn-get-started scrollto">Register</a>
                 <a href="/login" class="btn-get-started scrollto">Login</a>
             </div>
         </div>

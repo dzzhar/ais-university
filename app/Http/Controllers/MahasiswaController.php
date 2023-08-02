@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Mahasiswa;
+use App\Models\Jurusan;
+use App\Models\Kelas;
 
 class MahasiswaController extends Controller
 {
@@ -30,7 +32,9 @@ class MahasiswaController extends Controller
 
     function create()
     {
-        return view('pages.mahasiswa.create');
+        $idJurusan = Jurusan::get();
+        $idKelas = Kelas::get();
+        return view('pages.mahasiswa.create', compact('idJurusan', 'idKelas'));
     }
 
     function update($id, Request $request)
